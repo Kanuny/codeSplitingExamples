@@ -9,7 +9,7 @@ export default function () {
       <h1> Simple module for bundle 2 </h1>
       <span> This module should bundled to simpleBundle2 </span>
       <span className={styles.blackBorder}>
-        Also module2.css link should appeare only after Module2 loaded
+        Also module2.scss link should appeare only after Module2 loaded
       </span>
 
     </div>
