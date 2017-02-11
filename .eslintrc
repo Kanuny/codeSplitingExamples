@@ -1,0 +1,83 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise"
+  ],
+  "env": {
+    "browser" : true
+  },
+  "globals": {
+    "__DEV__"      : false,
+    "__TEST__"     : false,
+    "__PROD__"     : false,
+    "__COVERAGE__" : false
+  },
+  "rules": {
+    "react/jsx-no-target-blank": 0,
+    "generator-star-spacing": 0,
+    "react/no-multi-comp": 0,
+    "react/jsx-filename-extension": 0,
+    "react/require-extension": 0,
+    "import/no-unresolved": 2,
+    "import/no-named-as-default": 2,
+    "import/extensions": [2, "never"],
+    "import/first": 0,
+    "import/order": ["error", {
+      "groups": [
+        ["builtin", "external"],
+        "parent",
+        "internal",
+        "sibling",
+        "index"
+      ],
+      "newlines-between": "always"
+    }],
+    "no-param-reassign": [2, { "props": false }],
+    "max-len": [1, 100],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-console": 0,
+    "no-alert": 0,
+    "arrow-parens": 0,
+    "no-plusplus": 0,
+    "no-bitwise": 0,
+    "jsx-a11y/anchor-has-content": 0,
+    "class-methods-use-this": 0,
+    "react/no-unused-prop-types": [0, { "skipShapeProps": true }],
+    "react/forbid-prop-types": 0,
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }],
+    "jsx-a11y/no-static-element-interactions": 0,
+    "import/no-webpack-loader-syntax": 0,
+    "react/sort-comp": [2, {
+      "order": [
+        "static-methods",
+        "props",
+        "state",
+        "constructor",
+        "everything-else",
+        "lifecycle",
+        "/^(on|handle|toggle).+$/",
+        "/^render.+$/",
+        "render"
+      ]
+    }],
+    "jsx-a11y/label-has-for": 0,
+    "no-duplicate-imports": 0
+  }
+}
